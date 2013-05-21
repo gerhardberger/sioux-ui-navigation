@@ -83,7 +83,14 @@ Navigation.prototype.push = function (o) {
 	setupNavigationWindow(o, self.segue.right, self.bar);
 
 	self.content = self.segue.right;
-	self.segue.wind();
+	self.segue.wind().then(function () {
+		self.segue.left.innerHTML = '';
+
+		if (self._callback) self._callback(self);
+		self._callback = undefined;
+	});
+
+	return this;
 };
 
 Navigation.prototype.pop = function () {
@@ -98,7 +105,14 @@ Navigation.prototype.pop = function () {
 	setupNavigationWindow(o, self.segue.left, self.bar);
 
 	self.content = self.segue.left;
-	self.segue.unwind();
+	self.segue.unwind().then(function () {
+		self.segue.right.innerHTML = '';
+
+		if (self._callback) self._callback(self);
+		self._callback = undefined;
+	});
+
+	return this;
 };
 
 Navigation.prototype.hideBar = function() {

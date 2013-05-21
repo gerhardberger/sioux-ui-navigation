@@ -1,6 +1,6 @@
 {
     "name": "sioux-ui-navigation",
-    "version": "0.0.1",
+    "version": "0.0.7",
     "description": "Navigation for sioux",
     "main": "index.js",
     "dependencies": {
@@ -10,7 +10,7 @@
         "sioux-ui-segue": "*",
         "sioux-ui-button": "*"
     },
-    "keywords": ["sioux", "ui", "navigation", "push", "pop"],
+    "keywords": ["sioux", "ui", "navigation", "push", "pop", "bar", "toolbar"],
     "repository": {
         "type": "git",
         "url": "git://github.com/gerhardberger/sioux-ui-navigation.git"
