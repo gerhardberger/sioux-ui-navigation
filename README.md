@@ -12,7 +12,9 @@ Navigation (similar to the [iOS one](http://developer.apple.com/library/ios/#doc
 ### Create
 ``` js
 var UINavigation = require('sioux-ui-navigation');
-var nav = new UINavigation(document.querySelector('.screen'), { // the element is in which the navigation will be appended
+
+// the first argument is in which the navigation will be appended
+var nav = new UINavigation(document.querySelector('.screen'), {
   isToolbarHidden: true
   , isBarHidden: false
   , initWith: navElem
@@ -21,9 +23,9 @@ var nav = new UINavigation(document.querySelector('.screen'), { // the element i
 
 ### The navigation elem
 The `stack` contains and at the creation the `initWith` property and `.push()` method take an object, which has to contain:
-* __title__: the title in the bar (_String_)
-* __content__: the HTML what will be inserted into the `content` part (_DOM_)
-* __complete__: this function will be executed when the eleme will be loaded (_Function_)
+* __title__: the title in the bar _String_
+* __content__: the HTML what will be inserted into the `content` part _DOM_
+* __complete__: this function will be executed when the eleme will be loaded _Function_
 
 ### Properties
 * __stack__: the stack of the windows in the navigation, the last elem of the stack is the one active on the screen
