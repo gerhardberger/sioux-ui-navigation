@@ -37,14 +37,13 @@ The `stack` contains and at the creation the `initWith` property and `.push()` m
 * __segue__: the [UISegue](https://github.com/gerhardberger/sioux-ui-segue) object (in the content element)
 
 ### Methods
-##### .push(navElem)
-A new elem will be added to the `stack` and it will be displayed on screen.
-
-##### .pop()
-The last elem of the `stack` will be popped and then the previous elemnt will be displayed.
-
-##### .then(callback)
-Chain it to the `push` and `pop` method and when they finish the `callback` argument will be executed.
+* __.push(navElem)__: A new elem will be added to the `stack` and it will be displayed on screen.
+* __.pop()__: The last elem of the `stack` will be popped and then the previous elemnt will be displayed.
+* __.hideBar()__: Hides the top bar.
+* __.showBar()__: Shows it.
+* __.hideToolbar()__: Hides the toolbar.
+* __.showToolbar()__: Shows it.
+* __.then(callback)__: Chain it to the `push` or `pop` or any other method above, and when they finish the `callback` argument will be executed.
 
 ``` js
 var navObj = {
