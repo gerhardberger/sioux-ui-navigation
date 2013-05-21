@@ -1,4 +1,4 @@
-# Sioux UINavigation
+# Sioux Navigation
 
 ``` batch
 npm install sioux-ui-navigation
