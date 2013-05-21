@@ -1,10 +1,11 @@
-# Sioux UINavigation
+# Sioux Navigation
 
 ``` batch
 npm install sioux-ui-navigation
 ```
 
-Navigation (similar to the [iOS one](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationController_Class/Reference/Reference.html)) for sioux. [demo](http://felix.lovassy.hu/projects/gellert/sioux/navexample/) (on desktop in Chrome use emulate touch events in devtools)
+Navigation (similar to the [iOS one](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationController_Class/Reference/Reference.html)) for sioux.<br>
+__[demo](http://felix.lovassy.hu/projects/gellert/sioux/navexample/)__ (on desktop in Chrome use emulate touch events in devtools)
 
 ### Inherits from
 * [Sioux UI](https://github.com/gerhardberger/sioux-ui)
